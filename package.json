@@ -1,0 +1,58 @@
+{
+  "name": "zentrm",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Web-based Linux remote management tool — SSH terminal, SFTP file manager, system monitor",
+  "author": "Zentrm",
+  "license": "MIT",
+  "keywords": [
+    "linux",
+    "ssh",
+    "terminal",
+    "sftp",
+    "remote-management",
+    "xterm",
+    "vue",
+    "websocket"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zentrm/Zentrm.git"
+  },
+  "homepage": "https://github.com/Zentrm/Zentrm#readme",
+  "bugs": {
+    "url": "https://github.com/Zentrm/Zentrm/issues"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "server": "node server/index.js",
+    "dev": "concurrently -n \"前端,后端\" -c \"blue,green\" \"npm run serve\" \"npm run server\""
+  },
+  "dependencies": {
+    "core-js": "3.6.5",
+    "element-ui": "^2.15.14",
+    "uuid": "^14.0.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0",
+    "xterm": "^5.3.0",
+    "xterm-addon-fit": "^0.8.0",
+    "xterm-addon-web-links": "^0.9.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.9",
+    "@vue/cli-plugin-router": "~4.5.9",
+    "@vue/cli-plugin-vuex": "~4.5.9",
+    "@vue/cli-service": "~4.5.9",
+    "concurrently": "^10.0.3",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
